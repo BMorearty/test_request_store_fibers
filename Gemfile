@@ -9,8 +9,7 @@ gem "rails", "~> 7.0.0.alpha2"
 # Use sqlite3 as the database for Active Record
 gem "sqlite3", "~> 1.4"
 
-# Use the Puma web server [https://github.com/puma/puma]
-gem "puma", "~> 5.0"
+gem "falcon"
 
 # Use JavaScript with ESM import maps [https://github.com/rails/importmap-rails]
 gem "importmap-rails", ">= 0.3.4"
@@ -32,6 +31,10 @@ gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
 
 # Reduces boot times through caching; required in config/boot.rb
 gem "bootsnap", ">= 1.4.4", require: false
+
+gem "async"
+gem "request_store"
+gem "request_store-fibers"
 
 # Use Active Model has_secure_password [https://guides.rubyonrails.org/active_model_basics.html#securepassword]
 # gem "bcrypt", "~> 3.1.7"
